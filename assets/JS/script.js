@@ -84,7 +84,7 @@ function removePforNull () {
             removePforNull ()
             var max = Math.max(first.value , second.value , third.value)
             var min = Math.min(first.value , second.value , third.value)
-            max_min.innerHTML += createP('zoom-in' , `the numbers you emtered them is : ${first.value} & ${second.value} & ${third.value}` , 'blue')
+            max_min.innerHTML += createP('zoom-in' , `the numbers you entered them is : ${first.value} & ${second.value} & ${third.value}` , 'blue')
                               + createP('zoom-in' , `the max element : ${max}` , 50)
                               + createP('zoom-in' , `the max element : ${min}` , 50)
                               + createP('zoom-in' , 'you can test another numbers if you want' , 'orange' , 500)
@@ -106,7 +106,7 @@ function vowel () {
         removePforNull ()
         if (v.toLowerCase()=='a' || v.toLowerCase()=='e' || v.toLowerCase()=='i' || v.toLowerCase()=='o' || v.toLowerCase()=='u') {
             console.log (v + " is a vowel character")
-            vowel.innerHTML += createP('zoom-in' , `the character you emtered it is : ${v}` , 'blue')
+            vowel.innerHTML += createP('zoom-in' , `the character you entered it is : ${v}` , 'blue')
                             + createP('zoom-in' , `${v} is a vowel character` , 50)
                             + createP('zoom-in' , 'you can test another characters if you want' , 'orange' , 500)
                             addBtn() 
@@ -117,14 +117,14 @@ function vowel () {
                 || v.toLowerCase()=='t' || v.toLowerCase()=='v.toLowerCase()' || v.toLowerCase()=='w' || v.toLowerCase()=='z' || v.toLowerCase()=='y' || v.toLowerCase()=='z'
             ) {
             console.log (v + " is a Consonant character")
-            vowel.innerHTML += createP('zoom-in' , `the character you emtered it is : ${v}` , 'blue')
+            vowel.innerHTML += createP('zoom-in' , `the character you entered it is : ${v}` , 'blue')
                             + createP('zoom-in' , `${v} is a Consonant character` , 50)
                             + createP('zoom-in' , 'you can test another characters if you want' , 'orange' , 500)
                             addBtn() 
         } 
         else {
             console.log ("you entered invalid character")
-            vowel.innerHTML += createP(' ' , `the character you emtered it is : ${v}` , 'blue')
+            vowel.innerHTML += createP(' ' , `the character you entered it is : ${v}` , 'blue')
                             + createP(' ' , ' you entered invalid character ' , 'orange' )
         }
     }
@@ -144,7 +144,7 @@ function multiplication() {
         for (let index = 1; index <= 12; index++) {
             sum += (m * index)+' '
         }
-        multi.innerHTML += createP('zoom-in' , `the number you emtered it is : ${m}` , 'blue')
+        multi.innerHTML += createP('zoom-in' , `the number you entered it is : ${m}` , 'blue')
                         + createP('zoom-in' , `${sum}` , 50)
                         + createP('zoom-in' , 'you can test another number if you want' , 'orange' , 500)
         console.log(sum)
@@ -168,7 +168,7 @@ function evenNumber() {
                 sum += index+' '
             }
         }
-        even.innerHTML += createP('zoom-in' , `the number you emtered it is : ${e}` , 'blue')
+        even.innerHTML += createP('zoom-in' , `the number you entered it is : ${e}` , 'blue')
                         + createP('zoom-in' , `${sum}` , 50)
                         + createP('zoom-in' , 'you can test another number if you want' , 'orange' , 500)
         console.log(sum)
@@ -200,7 +200,7 @@ function the_avg() {
         console.log('The Total marks of the Marks you Entered is : ' + sum)
         console.log('The Average is : ' + a)
         console.log('The Percentage is : ' + a + '%')
-        m_avg.innerHTML += createP('zoom-in' , `the numbers you emtered them is : ${first_num.value} & ${second_num.value} & ${third_num.value} & ${fourth_num.value} & ${fifth_num.value}` , 'blue')
+        m_avg.innerHTML += createP('zoom-in' , `the numbers you entered them is : ${first_num.value} & ${second_num.value} & ${third_num.value} & ${fourth_num.value} & ${fifth_num.value}` , 'blue')
                         + createP('zoom-in' , `The Total marks of them is : ${sum}` , 50)
                         + createP('zoom-in' , `the average is : ${a}` , 50)
                         + createP('zoom-in' , `the percentage is : ${a}%` , 50)
@@ -251,7 +251,7 @@ function grade() {
         console.log('The Total marks of the Marks you Entered is : ' + sum)
         console.log('The Average is : ' + a)
         console.log('The Percentage is : ' + a + '%')
-        g.innerHTML += createP('zoom-in' , `the numbers you emtered them is : ${physics.value} & ${chemistry.value} & ${biology.value} & ${mathematics.value} & ${computer.value}` , 'blue')
+        g.innerHTML += createP('zoom-in' , `the numbers you entered them is : ${physics.value} & ${chemistry.value} & ${biology.value} & ${mathematics.value} & ${computer.value}` , 'blue')
                         + createP('zoom-in' , `The Total marks of them is : ${sum}` , 50)
                         + createP('zoom-in' , `the average is : ${a}` , 50)
                         + createP('zoom-in' , `the percentage is : ${a}% ${G}` , 50)
