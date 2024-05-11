@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sriracha";
+    --orange: #ff7f57;
+    --off-white: #f4f6f7;
+    --blue: #2557ab;
+}
+h1{
+    font-family: "Playball";
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    text-shadow: 2px 2px 5px var(--black) , -2px -2px 5px var(--black);
+}
+main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--orange);
+
+}
+/* Intro */
+#intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+#intro .auto-type {
+    color: var(--off-white);
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.typed-cursor {
+    display: none;
+}
+#intro .show-task {
+    padding: 6px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--off-white);
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+/* Task */
+.container {
+    padding: 40px 120px;
+    position: relative;
+    width: 100%;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container div {
+    width: 100%; 
+    margin: 20px 0;
+    padding: 10px 15px;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px var(--blue) , -2px -2px 2px 2px var(--blue) ;
+
+}
+.container div h3 {
+    color: var(--blue);
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.container div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container div form input {
+    width: 100%;
+    margin: 6px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid var(--blue);
+}
+.container div form .btn ,.container .next {
+    margin: 15px 0;
+    width: max-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    color: var(--off-white);
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+.container div form p {
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 100%;
+}
+.container div form p.orange {
+    color: var(--orange);
+}
+.container div form p.blue {
+    color: var(--blue);
+}
+.hide {
+    display: none;
+}
+@media screen and (max-width:992px) {
+    
+}
+@media screen and (max-width:768px) {
+    .container {
+        padding: 30px 80px;
+    }
+}
+@media screen and (max-width:576px) {
+    .container {
+        padding: 20px 60px;
+    }
+    .container #intro .auto-type {
+        font-size: 40px;
+    }
+    .container #intro .show-task {
+        font-size: 15px;
+    }
+}

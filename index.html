@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 7 - JS - Part 1</title>
+
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/CSS/style.css">
+
+        <!-- Font Files -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <main>
+
+            <!-- The INTRO -->
+            <section id="intro">
+                <h1 class="auto-type" data-aos="fade-up"></h1>
+                <button class="show-task" onclick="showTask()" data-aos="fade-up">SHOW</button>
+            </section>
+
+            <!-- Task Part 1 -->
+            <section class="container" id="show">
+                
+                <!-- Question 1 -->
+                <div class="question" data-aos="zoom-in">
+                    <h3>a program that take 3 integers from user then print the max element and the min element.</h3>
+                    <form id="max-min">
+                        <input type="number" name="number" id="first" placeholder="First Number">
+                        <input type="number" name="number" id="second" placeholder="Second Number">
+                        <input type="number" name="number" id="third" placeholder="Third Number">
+                        <button class="btn" onclick="min_max()">print the result</button>
+                    </form>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question hide" data-aos="zoom-in" data-aos-delay="1000">
+                    <h3>a program that take character from user then if it is vowel chars (a,e,i,o,u) then print vowel otherwise print consonant.</h3>
+                    <form id="vowel">
+                        <input type="text" name="character" id="char" placeholder="Write Only One Character">
+                        <button class="btn" onclick="vowel()">print the result</button>
+                    </form>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question hide" data-aos="zoom-in">
+                    <h3>a program that allows userto insert integerthen print a multiplication table up to 12.</h3>
+                    <form id="multi">
+                        <input type="number" name="multi-num" id="multi-num" placeholder="Write a Number">
+                        <button class="btn" onclick="multiplication()">print the result</button>
+                    </form>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question hide" data-aos="zoom-in">
+                    <h3>a program that allows to user to insert number then print all even numbers between 1 to this number.</h3>
+                    <form id="even">
+                        <input type="number" name="even" id="even-num" placeholder="Write a Number">
+                        <button class="btn" onclick="evenNumber()">print the result</button>
+                    </form>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question hide" data-aos="zoom-in">
+                    <h3>a program to enter marks of five subjects and calculate total, average and percentage.</h3>
+                    <form id="avg">
+                        <input type="number" name="first" id="first-num" placeholder="Write 1st Number">
+                        <input type="number" name="second" id="second-num" placeholder="Write 2nd Number">
+                        <input type="number" name="third" id="third-num" placeholder="Write 3rd Number">
+                        <input type="number" name="fourth" id="fourth-num" placeholder="Write 4th Number">
+                        <input type="number" name="fifth" id="fifth-num" placeholder="Write 5th Number">
+                        <button class="btn" onclick="the_avg()">print the result</button>
+                    </form>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question hide" data-aos="zoom-in">
+                    <h3>a program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer, Find percentage and grade.</h3>
+                    <form id="grade">
+                        <input type="number" name="first" id="physics" placeholder="Write Physics Mark">
+                        <input type="number" name="second" id="chemistry" placeholder="Write Chemistry Mark">
+                        <input type="number" name="third" id="biology" placeholder="Write Biology Mark">
+                        <input type="number" name="fourth" id="mathematics" placeholder="Write Mathematics Mark">
+                        <input type="number" name="fifth" id="computer" placeholder="Write Computer Mark">
+                        <button class="btn" onclick="grade()">print the result</button>
+                    </form>
+                </div>
+                
+            </section>
+            
+        </main>
+
+        <!-- JS Files -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./assets/JS/script.js"></script>
+        
+    </body>
+
+</html>
