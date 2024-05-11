@@ -104,18 +104,17 @@ function vowel () {
     }
     else {
         removePforNull ()
-        v.toLowerCase()
-        if (v=='a' || v=='e' || v=='i' || v=='o' || v=='u') {
+        if (v.toLowerCase()=='a' || v.toLowerCase()=='e' || v.toLowerCase()=='i' || v.toLowerCase()=='o' || v.toLowerCase()=='u') {
             console.log (v + " is a vowel character")
             vowel.innerHTML += createP('zoom-in' , `the character you emtered it is : ${v}` , 'blue')
                             + createP('zoom-in' , `${v} is a vowel character` , 50)
                             + createP('zoom-in' , 'you can test another characters if you want' , 'orange' , 500)
                             addBtn() 
         } 
-        else if (v=='b' || v=='c' || v=='d' || v=='f' || v=='j'
-                || v=='h' || v=='j' || v=='k' || v=='l' || v=='m'
-                || v=='n' || v=='p' || v=='q' || v=='r' || v=='s'
-                || v=='t' || v=='v' || v=='w' || v=='z' || v=='y' || v=='z'
+        else if (v.toLowerCase()=='b' || v.toLowerCase()=='c' || v.toLowerCase()=='d' || v.toLowerCase()=='f' || v.toLowerCase()=='j'
+                || v.toLowerCase()=='h' || v.toLowerCase()=='j' || v.toLowerCase()=='k' || v.toLowerCase()=='l' || v.toLowerCase()=='m'
+                || v.toLowerCase()=='n' || v.toLowerCase()=='p' || v.toLowerCase()=='q' || v.toLowerCase()=='r' || v.toLowerCase()=='s'
+                || v.toLowerCase()=='t' || v.toLowerCase()=='v.toLowerCase()' || v.toLowerCase()=='w' || v.toLowerCase()=='z' || v.toLowerCase()=='y' || v.toLowerCase()=='z'
             ) {
             console.log (v + " is a Consonant character")
             vowel.innerHTML += createP('zoom-in' , `the character you emtered it is : ${v}` , 'blue')
