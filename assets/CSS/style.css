@@ -120,7 +120,7 @@ main {
 }
 @media screen and (max-width:576px) {
     .container {
-        padding: 20px 60px;
+        padding: 20px 40px;
     }
     .container #intro .auto-type {
         font-size: 40px;
