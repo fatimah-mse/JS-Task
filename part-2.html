@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 7 - JS - Part 2</title>
+
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./assets/CSS/style.css">
+
+        <!-- Font Files -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <main class="container part-2-main">
+
+            <!-- Task 1 -->
+            <h1 class="task-name" data-aos="fade-right">Task 1</h1>
+            <section class="task-1">
+                <div class="hero-top">
+                    <div data-aos="fade-right">
+                        <h1>iphone 13 pro max</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea expedita delectus mollitia quam ratione maiores id nesciunt quis, nam molestiae?</p>
+                    </div>
+                    <img src="./assets/imgs/gold.png" data-aos="zoom-in" data-aos-delay="100" id="basic-image">
+                </div>
+                <div class="hero-bottom">
+                    <img onclick="changeImage(this)" id="gold" src="./assets/imgs/gold.png" data-aos="fade-up" data-aos-delay="100">
+                    <img onclick="changeImage(this)" id="blue" src="./assets/imgs/blue.png" data-aos="fade-up" data-aos-delay="200">
+                    <img onclick="changeImage(this)" id="black" src="./assets/imgs/black.png" data-aos="fade-up" data-aos-delay="300">
+                    <img onclick="changeImage(this)" id="white" src="./assets/imgs/white.png" data-aos="fade-up" data-aos-delay="400">
+                    <img onclick="changeImage(this)" id="red" src="./assets/imgs/red.png" data-aos="fade-up" data-aos-delay="500">
+                </div>
+            </section>
+            
+            <!-- Task 2 -->
+            <h1 class="task-name" data-aos="fade-right">Task 2</h1>
+            <section id="task-2" data-aos="zoom-in">
+                <i class="icon fa-solid fa-moon" onclick="changeMood(this)"></i>
+                <h1 class="text" data-aos="fade-up" data-aos-delay="300">Hello World</h1>
+                <p class="text" data-aos="fade-up" data-aos-delay="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dolores asperiores quod numquam, minima, optio veritatis omnis adipisci repellendus sint iusto, aliquid ex blanditiis necessitatibus sapiente exercitationem rem explicabo fugiat et esse ipsum? Dolores impedit veniam veritatis totam nesciunt excepturi.</p>
+            </section>
+
+            <!-- Task 3 -->
+            <h1 class="task-name" data-aos="fade-right">Task 3</h1>
+            <section id="task-3" data-aos="zoom-in">
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <i class="icon fa-solid fa-chevron-down" onclick="openAccordion(this)"></i>
+                    <h3>How many team members can I invite?</h3>
+                    <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore aliquam quod dolorem fugit, quibusdam exercitationem asperiores nemo voluptate non omnis. Harum, temporibus? Esse omnis aspernatur nam fuga libero nobis, magnam, similique provident enim asperiores cupiditate mollitia deserunt perferendis, voluptatum incidunt atque eos at quidem. Delectus voluptatum fuga tempora veritatis.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <i class="icon fa-solid fa-chevron-down" onclick="openAccordion(this)"></i>
+                    <h3>What is the maximum file upload size?</h3>
+                    <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore aliquam quod dolorem fugit, quibusdam exercitationem asperiores nemo voluptate non omnis. Harum, temporibus? Esse omnis aspernatur nam fuga libero nobis, magnam, similique provident enim asperiores cupiditate mollitia deserunt perferendis, voluptatum incidunt atque eos at quidem. Delectus voluptatum fuga tempora veritatis.</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <i class="icon fa-solid fa-chevron-down" onclick="openAccordion(this)"></i>
+                    <h3>How do I reset my password?</h3>
+                    <p class="hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore aliquam quod dolorem fugit, quibusdam exercitationem asperiores nemo voluptate non omnis. Harum, temporibus? Esse omnis aspernatur nam fuga libero nobis, magnam, similique provident enim asperiores cupiditate mollitia deserunt perferendis, voluptatum incidunt atque eos at quidem. Delectus voluptatum fuga tempora veritatis.</p>
+                </div>
+            </section>
+
+            <!-- Task 4 -->
+            <h1 class="task-name" data-aos="fade-right">Task 4</h1>
+            <section id="task-4" data-aos="zoom-in">
+                <h3>How was your experience?</h3>
+                <div class="rating">
+                    <i onclick="rating(this)" class="star fa-solid fa-star"></i>
+                    <i onclick="rating(this)" class="star fa-solid fa-star"></i>
+                    <i onclick="rating(this)" class="star fa-solid fa-star"></i>
+                    <i onclick="rating(this)" class="star fa-solid fa-star"></i>
+                    <i onclick="rating(this)" class="star fa-solid fa-star"></i>
+                </div>
+                <p>It ia awesome</p>
+            </section>
+
+        </main>
+
+        
+
+        <!-- JS Files -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" integrity="sha512-tQQXRDB2wEmuJGtFrmmoFYzNTq8StA1XJrfO0OQbbTxd9G0CwaTDL6/C1y805IlvBVrMwOqob1kf6r/2U5XXVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./assets/JS/script2.js"></script>
+        
+    </body>
+
+</html>

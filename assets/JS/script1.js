@@ -1,4 +1,3 @@
-// Access To the Elements
 let index = 0
 
 // Animation With AOS Library
@@ -11,13 +10,13 @@ window.addEventListener('load', () => {
 })
 
 // Animation With Typed JS Library
-let typed = new Typed('.auto-type' ,
-    {
-        strings: ["Hello I'm Fatimah Mselmani" , "This is my 7th Task" , "To Display it click button"],
-        typeSpeed: 100,
-        backSpeed: 100,
-        looped: true
-    }) 
+let typed1 = new Typed('.auto-type' ,
+{
+    strings: ["Hello I'm Fatimah Mselmani" , "This is my 7th Task" , "To Display it click button"],
+    typeSpeed: 70,
+    backSpeed: 70,
+    loop: true
+}) 
 
 // Hide The Intro and Show the Part 1 of Task
 function showTask () {
@@ -38,12 +37,12 @@ function addBtn() {
 
 // Show the next question
 function next(obj) {
-    const question = document.querySelectorAll('.question');
+    const question = document.querySelectorAll('.question')
     n= document.querySelector('.next')
         if (n) {
             if (index < question.length - 1) {
                 index++;
-                question[index].classList.remove('hide');
+                question[index].classList.remove('hide')
             }
             obj.remove()
         }
@@ -69,29 +68,47 @@ function removePforNull () {
     }
 }
 
+// Create div For the End Of Part 1 and Show Part 2
+function endPart1() {
+    var end = document.getElementById('show')
+    end.innerHTML += `<div class="end-part-one" data-aos="zoom-in">
+                        <h1>The End Of Part 1... <span class="auto-end-type"></span></h1>
+                        <a href="./part-2.html">Show Part 2</a>
+                    </div>`
+
+                    
+    let typed2 = new Typed('.auto-end-type' ,
+    {
+        strings: ["Do You Like it?" , "There is also Part 2" , "Do you want to see it?" , "If you want; Click Button"],
+        typeSpeed: 120,
+        backSpeed: 120,
+        loop: true
+    })
+}  
+
 // =========== Start Question 1 ===========
 
 // Show The min and max number after click on the button with add a button to show the next question when click on it
-    function min_max () {
-        var max_min = document.getElementById('max-min')
-        var first = document.getElementById('first')
-        var second = document.getElementById('second')
-        var third = document.getElementById('third')
-        if (first.value ==='' || second.value ==='' || third.value ==='') {
-            max_min.innerHTML += isNull()
-        }
-        else {
-            removePforNull ()
-            var max = Math.max(first.value , second.value , third.value)
-            var min = Math.min(first.value , second.value , third.value)
-            max_min.innerHTML += createP('zoom-in' , `the numbers you entered them is : ${first.value} & ${second.value} & ${third.value}` , 'blue')
-                              + createP('zoom-in' , `the max element : ${max}` , 50)
-                              + createP('zoom-in' , `the max element : ${min}` , 50)
-                              + createP('zoom-in' , 'you can test another numbers if you want' , 'orange' , 500)
-            console.log('The max element is :' + Math.max(first.value , second.value , third.value))
-            console.log('The min element is :' + Math.min(first.value , second.value , third.value))
-            addBtn()
-        }
+function min_max () {
+    var max_min = document.getElementById('max-min')
+    var first = document.getElementById('first')
+    var second = document.getElementById('second')
+    var third = document.getElementById('third')
+    if (first.value ==='' || second.value ==='' || third.value ==='') {
+        max_min.innerHTML += isNull()
+    }
+    else {
+        removePforNull ()
+        var max = Math.max(first.value , second.value , third.value)
+        var min = Math.min(first.value , second.value , third.value)
+        max_min.innerHTML += createP('zoom-in' , `the numbers you entered them is : ${first.value} & ${second.value} & ${third.value}` , 'blue')
+                        + createP('zoom-in' , `the max element : ${max}` , 50)
+                        + createP('zoom-in' , `the max element : ${min}` , 50)
+                        + createP('zoom-in' , 'you can test another numbers if you want' , 'orange' , 500)
+        console.log('The max element is :' + Math.max(first.value , second.value , third.value))
+        console.log('The min element is :' + Math.min(first.value , second.value , third.value))
+        addBtn()
+    }
 }
 // =========== End Question 1 ===========
 
@@ -163,15 +180,15 @@ function evenNumber() {
     }
     else {
         removePforNull ()
-        for (let index = 0; index < e; index++) {
-            if( (index % 2) !== 0 ) {
+        for (let index = 1; index <= e; index++) {
+            if( (index % 2) === 0 ) {
                 sum += index+' '
             }
         }
         even.innerHTML += createP('zoom-in' , `the number you entered it is : ${e}` , 'blue')
-                        + createP('zoom-in' , `${sum}` , 50)
+                        + createP('zoom-in' , `Even Numbers Between 1 To ${e} is : ${sum}` , 50)
                         + createP('zoom-in' , 'you can test another number if you want' , 'orange' , 500)
-        console.log(sum)
+        console.log(`Even Numbers Between 1 To ${e} is :` + sum)
         addBtn() 
     }
 }
@@ -250,12 +267,13 @@ function grade() {
         }
         console.log('The Total marks of the Marks you Entered is : ' + sum)
         console.log('The Average is : ' + a)
-        console.log('The Percentage is : ' + a + '%')
+        console.log('The Percentage is : ' + a + '%' + ' , ' + G)
         g.innerHTML += createP('zoom-in' , `the numbers you entered them is : ${physics.value} & ${chemistry.value} & ${biology.value} & ${mathematics.value} & ${computer.value}` , 'blue')
                         + createP('zoom-in' , `The Total marks of them is : ${sum}` , 50)
                         + createP('zoom-in' , `the average is : ${a}` , 50)
-                        + createP('zoom-in' , `the percentage is : ${a}% ${G}` , 50)
-                        + createP(' ' , 'you can test another mark if you want' , 'orange' , 500)
+                        + createP('zoom-in' , `the percentage is : ${a}% , ${G}` , 50)
+                        + createP('zoom-in' , 'you can test another mark if you want' , 'orange' , 500)
+        endPart1()
     }
 }
 // =========== End Question 6 ===========

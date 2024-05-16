@@ -17,8 +17,9 @@ main {
     position: relative;
     width: 100%;
     min-height: 100vh;
+}
+.part-1-main {
     background-color: var(--orange);
-
 }
 /* Intro */
 #intro {
@@ -52,12 +53,14 @@ main {
     padding: 40px 120px;
     position: relative;
     width: 100%;
+}
+.part-1 {
     display: none;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
-.container div {
+.part-1 div {
     width: 100%; 
     margin: 20px 0;
     padding: 10px 15px;
@@ -66,17 +69,17 @@ main {
     box-shadow: 2px 2px 2px 2px var(--blue) , -2px -2px 2px 2px var(--blue) ;
 
 }
-.container div h3 {
+.part-1 div h3 {
     color: var(--blue);
     font-size: 20px;
     text-transform: capitalize;
 }
-.container div form {
+.part-1 div form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.container div form input {
+.part-1 div form input {
     width: 100%;
     margin: 6px 0;
     padding: 5px 10px;
@@ -84,7 +87,7 @@ main {
     background-color: transparent;
     border: 1px solid var(--blue);
 }
-.container div form .btn ,.container .next {
+.part-1 div form .btn, .end-part-one a ,.part-1 .next {
     margin: 15px 0;
     width: max-content;
     padding: 5px 10px;
@@ -96,19 +99,136 @@ main {
     cursor: pointer;
     border: none;
 }
-.container div form p {
+.part-1 div form p {
     text-transform: uppercase;
     font-weight: 700;
     width: 100%;
 }
-.container div form p.orange {
+.part-1 div form p.orange {
     color: var(--orange);
 }
-.container div form p.blue {
+.part-1 div form p.blue {
     color: var(--blue);
 }
 .hide {
     display: none;
+}
+.end-part-one {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    text-align: center;
+    color: var(--off-white);
+}
+.end-part-one h1 {
+    margin-bottom: 15px;
+}
+.end-part-one a{
+    text-decoration: none;
+}
+.part-2-main {
+    background-color: var(--off-white);
+}
+.part-2-main section {
+    overflow: hidden;
+    margin: 20px 0 60px 0;
+    padding: 100px 60px;
+}
+.part-2-main .task-name {
+    color: var(--blue);
+    padding-bottom: 10px;
+    border-bottom: 2px dashed var(--blue);
+}
+.part-2-main .task-1 {
+    background-color: #daa520c9;
+}
+.part-2-main .task-1 .hero-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.part-2-main .task-1 .hero-top div {
+    width: 40%;
+    color: #fff;
+}
+.part-2-main .task-1 .hero-top img {
+    height: 250px;
+}
+.part-2-main .task-1 .hero-bottom {
+    margin-top: 50px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.part-2-main .task-1 .hero-bottom img {
+    width: 60px;
+    margin: 10px;
+    cursor: pointer;
+}
+.part-2-main #task-2 {
+    position: relative;
+    background-color: #fff;
+    border: 3px solid var(--blue);
+    text-align: center;
+    color: var(--blue);
+    font-weight: bold;
+}
+.part-2-main #task-2 .icon{
+    position: absolute;
+    color: var(--blue);
+    font-size: 40px;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+#task-2.darkmood{
+    background-color: var(--blue);
+}
+.text.darkmood {
+    color: var(--off-white);
+}
+#task-3 {
+    padding: 0;
+}
+#task-3 div {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #018529;
+    background-color: #78f19daf;
+    color: #018529;
+}
+#task-3 div .icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+#task-3 div h3 {
+    width: 75%;
+}
+#task-3 div p.hide {
+    display: none;
+}
+#task-4 {
+    background-color: #02203d;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f4f6f7;
+    text-align: center;
+}
+#task-4 .rating {
+    margin: 20px 0;
+}
+#task-4 .rating .star{
+    margin: 0 2px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #000;
 }
 @media screen and (max-width:992px) {
     
@@ -117,15 +237,38 @@ main {
     .container {
         padding: 30px 80px;
     }
+    .part-2-main section {
+        padding: 60px 30px;
+    }
+    .part-2-main .task-1 .hero-top {
+        flex-direction: column-reverse;
+    }
+    .part-2-main .task-1 .hero-top div {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .part-2-main .task-1 .hero-top img {
+        height: 180px;
+    }
 }
 @media screen and (max-width:576px) {
     .container {
         padding: 20px 40px;
     }
-    .container #intro .auto-type {
+    .part-1 #intro .auto-type {
         font-size: 40px;
     }
-    .container #intro .show-task {
+    .part-1 #intro .show-task {
         font-size: 15px;
+    }
+    .part-2-main .task-1 .hero-bottom img {
+        width: 40px;
+    }
+    h1.text{
+        margin-top: 20px;
+    }
+    #task-4 .rating .star{
+        font-size: 20px;
     }
 }
