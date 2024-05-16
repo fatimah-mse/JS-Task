@@ -128,7 +128,7 @@ function vowel () {
                             + createP('zoom-in' , 'you can test another characters if you want' , 'orange' , 500)
                             addBtn() 
         } 
-        else if (v.toLowerCase()=='b' || v.toLowerCase()=='c' || v.toLowerCase()=='d' || v.toLowerCase()=='f' || v.toLowerCase()=='j'
+        else if (v.toLowerCase()=='b' || v.toLowerCase()=='c' || v.toLowerCase()=='d' || v.toLowerCase()=='f' || v.toLowerCase()=='g'
                 || v.toLowerCase()=='h' || v.toLowerCase()=='j' || v.toLowerCase()=='k' || v.toLowerCase()=='l' || v.toLowerCase()=='m'
                 || v.toLowerCase()=='n' || v.toLowerCase()=='p' || v.toLowerCase()=='q' || v.toLowerCase()=='r' || v.toLowerCase()=='s'
                 || v.toLowerCase()=='t' || v.toLowerCase()=='v.toLowerCase()' || v.toLowerCase()=='w' || v.toLowerCase()=='z' || v.toLowerCase()=='y' || v.toLowerCase()=='z'
